@@ -1,0 +1,34 @@
+{
+	"name": "jstewmc/dci",
+	"description": "A PHP Data Context Interaction (DCI) library",
+	"license": "MIT",
+	"keywords": ["PHP", "data", "context", "interaction", "dci"],
+	"authors": [
+		{
+			"name": "Jack Clayton",
+			"email": "clayjs0@gmail.com"	
+		}
+	],
+	"repositories": [
+        {
+            "url": "https://github.com/jstewmc/transient.git",
+            "type": "git"
+        },
+        {
+            "url": "https://github.com/jstewmc/refraction.git",
+            "type": "git"
+        }
+    ],
+	"require": {
+    	"jstewmc/transient": "dev-master",
+    	"jstewmc/refraction": "dev-master"
+	},
+	"require-dev": {
+		"phpunit/phpunit": "4.2.*"
+	},
+	"autoload": {
+		"psr-4": {
+			"Jstewmc\\Dci\\": "src/"
+		}
+	}
+}
